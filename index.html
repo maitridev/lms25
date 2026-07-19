@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Shin Family · lms25.ca</title>
+<meta name="description" content="Leona, Michael &amp; Sophie — a small family in Toronto, writing it down.">
+<meta property="og:title" content="The Shin Family">
+<meta property="og:description" content="Leona, Michael &amp; Sophie — a small family in Toronto, writing it down.">
+<meta name="theme-color" content="#1E1510">
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="24" cy="66" r="13" fill="%23B23A48"/><circle cx="52" cy="50" r="13" fill="%233E6F8E"/><circle cx="80" cy="34" r="13" fill="%23D9A441"/></svg>'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Newsreader:ital,opsz,wght@1,6..72,400&family=Karla:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  /*
+    lms25.ca — v0.1, "a placeholder with soul"
+    Leona: this page is yours to reshape. Every colour, word, and curve
+    below is a first draft waiting for your eye.
+  */
+  :root{
+    --varnish:#1E1510;        /* deep cello-varnish brown */
+    --lamplight:#2B1D12;      /* warm glow at centre */
+    --parchment:#F2E7D5;      /* ivory text */
+    --amber:#C98A3D;          /* the phrase line */
+    --leona:#B23A48;          /* dol red */
+    --michael:#3E6F8E;        /* dol blue */
+    --sophie:#D9A441;         /* dol gold */
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    background:radial-gradient(120% 90% at 50% 42%, var(--lamplight) 0%, var(--varnish) 55%, #150E09 100%);
+    color:var(--parchment);
+    font-family:'Karla',system-ui,sans-serif;
+    display:flex;align-items:center;justify-content:center;
+    text-align:center;
+    -webkit-font-smoothing:antialiased;
+  }
+  main{padding:3rem 1.5rem;max-width:40rem;width:100%}
+
+  .eyebrow{
+    font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;
+    color:color-mix(in srgb, var(--parchment) 55%, transparent);
+    opacity:0;animation:rise .8s 1.9s ease forwards;
+  }
+  h1{
+    font-family:'Young Serif',serif;font-weight:400;
+    font-size:clamp(2.4rem,8vw,3.9rem);
+    letter-spacing:.01em;margin-top:.9rem;
+    opacity:0;animation:rise .8s 2.05s ease forwards;
+  }
+
+  .phrase{width:min(34rem,92%);margin:2.6rem auto 0;display:block;overflow:visible}
+  .phrase .line{
+    fill:none;stroke:var(--amber);stroke-width:2;stroke-linecap:round;opacity:.75;
+    stroke-dasharray:1;stroke-dashoffset:1;
+    animation:draw 1.5s .25s cubic-bezier(.4,0,.2,1) forwards;
+  }
+  .note{opacity:0;transform-origin:center;transform-box:fill-box;animation:pop .55s cubic-bezier(.34,1.5,.6,1) forwards}
+  .n1{animation-delay:1.05s}.n2{animation-delay:1.3s}.n3{animation-delay:1.55s}
+  .stem{stroke-width:2;stroke-linecap:round;opacity:.85}
+  .who{
+    font-size:.7rem;letter-spacing:.3em;fill:color-mix(in srgb, var(--parchment) 62%, transparent);
+    font-family:'Karla',sans-serif;opacity:0;animation:fade .6s forwards;
+  }
+  .w1{animation-delay:1.45s}.w2{animation-delay:1.7s}.w3{animation-delay:1.95s}
+
+  .refrain{
+    font-family:'Newsreader',serif;font-style:italic;
+    font-size:clamp(1.15rem,4vw,1.45rem);
+    color:color-mix(in srgb, var(--parchment) 88%, transparent);
+    margin-top:2.4rem;
+    opacity:0;animation:rise .8s 2.25s ease forwards;
+  }
+
+  footer{
+    margin-top:3.4rem;font-size:.78rem;line-height:1.9;
+    color:color-mix(in srgb, var(--parchment) 48%, transparent);
+    opacity:0;animation:fade 1s 2.7s ease forwards;
+  }
+  footer .wink{color:color-mix(in srgb, var(--parchment) 66%, transparent)}
+
+  @keyframes draw{to{stroke-dashoffset:0}}
+  @keyframes pop{from{opacity:0;transform:scale(.4)}to{opacity:1;transform:scale(1)}}
+  @keyframes fade{to{opacity:1}}
+  @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+  @media (prefers-reduced-motion: reduce){
+    .line{animation:none;stroke-dashoffset:0}
+    .note,.who,.eyebrow,h1,.refrain,footer{animation:none;opacity:1;transform:none}
+  }
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">Toronto &middot; est. MMXXV</p>
+  <h1>The Shin Family</h1>
+
+  <!-- Three of us, as three notes on one rising phrase. Sophie is the high note. -->
+  <svg class="phrase" viewBox="0 0 560 190" role="img" aria-label="A rising musical phrase with three notes labelled L, M and S — Leona, Michael and Sophie">
+    <path class="line" pathLength="1" d="M 22 148 C 170 160, 330 122, 538 58"/>
+    <g class="note n1">
+      <line class="stem" x1="131" y1="141" x2="131" y2="106" stroke="var(--leona)"/>
+      <ellipse cx="120" cy="146" rx="13" ry="9.5" fill="var(--leona)" transform="rotate(-18 120 146)"/>
+    </g>
+    <g class="note n2">
+      <line class="stem" x1="311" y1="117" x2="311" y2="82" stroke="var(--michael)"/>
+      <ellipse cx="300" cy="122" rx="13" ry="9.5" fill="var(--michael)" transform="rotate(-18 300 122)"/>
+    </g>
+    <g class="note n3">
+      <line class="stem" x1="481" y1="73" x2="481" y2="38" stroke="var(--sophie)"/>
+      <ellipse cx="470" cy="78" rx="13" ry="9.5" fill="var(--sophie)" transform="rotate(-18 470 78)"/>
+    </g>
+    <text class="who w1" x="120" y="180" text-anchor="middle">LEONA</text>
+    <text class="who w2" x="300" y="156" text-anchor="middle">MICHAEL</text>
+    <text class="who w3" x="470" y="112" text-anchor="middle">SOPHIE</text>
+  </svg>
+
+  <p class="refrain">Three of us, writing it down.</p>
+
+  <footer>
+    <span class="wink">Under construction — by us, this time.</span><br>
+    lms25.ca &middot; the chronicle begins soon
+  </footer>
+</main>
+</body>
+</html>
